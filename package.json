@@ -1,0 +1,14 @@
+{
+  "name": "generator-gambar-2d",
+  "version": "1.0.0",
+  "description": "Aplikasi Generator Gambar 2D berbasis AI",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "dotenv": "^16.4.5",
+    "@google/genai": "^2.10.0"
+  }
+}

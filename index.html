@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generator Gambar 2D</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">
+      <span class="logo-icon">🎨</span>
+      <span class="logo-text">Generator Gambar 2D</span>
+    </div>
+  </header>
+
+  <!-- Konten Utama -->
+  <main class="main-container">
+
+    <!-- Panel Input -->
+    <section class="panel input-panel">
+      <label for="prompt-input" class="label">Prompt Gambar</label>
+      <textarea
+        id="prompt-input"
+        class="prompt-textarea"
+        placeholder="Tuliskan deskripsi gambar yang ingin Anda buat..."
+        rows="6"
+      ></textarea>
+
+      <label for="model-select" class="label">Model AI</label>
+      <select id="model-select" class="model-select">
+        <option value="auto">Auto</option>
+        <option value="gemini-image">Gemini Image (Free)</option>
+        <option value="nano-banana">Nano Banana (Coming Soon)</option>
+      </select>
+      <p id="model-indicator" class="model-indicator">Model aktif: <span id="model-indicator-name">Auto</span></p>
+
+      <button id="generate-btn" class="btn btn-primary">
+        Generate Gambar
+      </button>
+    </section>
+
+    <!-- Panel Preview -->
+    <section class="panel preview-panel">
+      <label class="label">Hasil Gambar</label>
+      <div id="preview-area" class="preview-area">
+        <p class="preview-placeholder">Belum ada gambar yang dihasilkan</p>
+      </div>
+
+      <button id="download-btn" class="btn btn-secondary" disabled>
+        Download Gambar
+      </button>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2026 Generator Gambar 2D. Dibuat dengan Express.js.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
